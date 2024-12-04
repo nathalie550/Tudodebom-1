@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+
+
+/*******************************PROPRIETES GENERALES***************************************/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", serif;
+}
+
+a {
+    text-decoration: none;
+    /*Enlève les surlignements des a*/
+    color: black;
+}
+
+li {
+    list-style-type: none;
+    /*Enlève les puces des li*/
+}
+
+.flex {
+    display: flex;
+    /*Côte à côte*/
+    flex-wrap: wrap;
+    /*Si ça rendre pas tout, retour à la ligne*/
+}
+
+.spaceBetween {
+    justify-content: space-between;
+    /*Mettre des espaces*/
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.width40 {
+    width: 40%;
+}
+
+h3 {
+    font-size: 40px;
+    font-family: "Playwrite HR Lijeva", cursive;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.container {  
+    max-width: 1000px; /*Ds container tjs mettre ls propriétés max width et with*/
+    width: 100%;
+    margin: auto; /*c'est égal à margin-right et margin-left=auto*/
+    display: flex;
+}
+
+/****************************************HEADER***********************************************/
+.header {
+    /*Mettre une dimension à la nav pour créer les espaces*/
+    width: 70%;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.monHeader {
+    padding: 16px 64px;
+    margin-bottom: 40px;
+    border: 4px solid rgb(6, 114, 37);
+}
+
+.monHeader img {
+    width: 100px;
+    margin-left: 25px;
+    object-fit: cover;
+}
+
+.monHeader a {
+    color: rgb(6, 114, 37);
+    font-size: 24px;
+}
+
+.navHeader {
+    /*Mettre une dimension à la nav pour créer les espaces*/
+    width: 50%;
+}
+
+
+/************************************SECTION HERO*********************************************/
+.hero {
+    border: 4px solid rgb(6, 114, 37);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.hero video {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+}
+
+.heroDescription {
+    width: 65%;
+    position: absolute;
+    top: 40px;
+    margin-top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.heroDescription h1 {
+    font-size: 40px;
+    font-family: "Playwrite HR Lijeva", cursive;
+    color: white;
+    margin-bottom: 45px;
+
+}
+
+.heroDescription h2 {
+    font-size: 25px;
+    font-family: "Inter", serif;
+    color: white;
+    margin-bottom: 45px;
+}
+
+.heroDescription h1,
+.heroDescription h2 {
+    text-shadow: 2px 2px black;
+}
+
+.heroDescription .btn {
+    background-color: rgb(6, 114, 37);
+    width: 320px;
+    height: 120px;
+    margin-top: 150px;
+    margin-left: 270px;
+    align-content: center;
+    font-size: 30px;
+    font-family: "Inter", serif;
+    color: white;
+    border-radius: 15px;
+  }
+
+.heroDescription .btn:hover {
+    background-color: orange;
+    color: black;
+}
+
+
+
+/*SECTION PLAT AVEC LES CARDS*/
+
+.card {
+    border: 4px solid green;
+    width: 250px;
+    height: 450px;
+    margin-bottom: 50px;  
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardDescription h4 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;   
+}
+
+
+.cardDescription p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+
+/***********************************SECTION SERVICE*****************************************/
+.carousselServiceCard {
+    width: 400px;
+    border: 2px solid black;
+    padding-bottom: 20px;
+}
+
+.carousselServiceCard h4 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px; 
+}
+
+.carousselServiceCard p {
+    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.boutonService {
+    background-color: orange;;
+    width: 60px;
+    height: 40px;
+    margin-left: 150px;  
+    font-size: 20px;    
+}
