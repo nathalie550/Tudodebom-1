@@ -26,6 +26,10 @@ li {
     /*Si ça rendre pas tout, retour à la ligne*/
 }
 
+.gap {
+    gap: 32px;
+}
+
 .spaceBetween {
     justify-content: space-between;
     /*Mettre des espaces*/
@@ -50,10 +54,12 @@ h3 {
     margin-left: 15px;
 }
 
-.container {  
-    max-width: 1000px; /*Ds container tjs mettre ls propriétés max width et with*/
+.container {
+    max-width: 1000px;
+    /*Ds container tjs mettre ls propriétés max width et with*/
     width: 100%;
-    margin: auto; /*c'est égal à margin-right et margin-left=auto*/
+    margin: auto;
+    /*c'est égal à margin-right et margin-left=auto*/
     display: flex;
 }
 
@@ -91,7 +97,7 @@ h3 {
 
 /************************************SECTION HERO*********************************************/
 .hero {
-    border: 4px solid rgb(6, 114, 37);
+    border: 5px solid rgb(6, 114, 37);
     margin-bottom: 40px;
     position: relative;
 }
@@ -143,7 +149,8 @@ h3 {
     font-family: "Inter", serif;
     color: white;
     border-radius: 15px;
-  }
+    box-shadow: 2px 4px black;
+}
 
 .heroDescription .btn:hover {
     background-color: orange;
@@ -151,14 +158,25 @@ h3 {
 }
 
 
+/************************************DIV DIVERS*********************************************/
+.divers p {
+    font-size: 30px;
+    font-family: "Playwrite HR Lijeva", cursive;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
 
-/*SECTION PLAT AVEC LES CARDS*/
+
+
+
+
+/****************************SECTION PLAT AVEC LES CARDS*************************************/
 
 .card {
-    border: 4px solid green;
+    border: 4px solid rgb(6, 114, 37);
     width: 250px;
     height: 450px;
-    margin-bottom: 50px;  
+    margin-bottom: 50px;
 }
 
 .card img {
@@ -169,7 +187,7 @@ h3 {
 .cardDescription h4 {
     margin-top: 10px;
     text-align: center;
-    font-size: 20px;   
+    font-size: 20px;
 }
 
 
@@ -182,27 +200,96 @@ h3 {
 
 /***********************************SECTION SERVICE*****************************************/
 .carousselServiceCard {
-    width: 400px;
-    border: 2px solid black;
+    width: 320px;
+    height: 300px;
+    border: 3px solid rgb(6, 114, 37);
     padding-bottom: 20px;
+    box-shadow: 4px 3px orange;
+    padding: 10px;
+
+
 }
 
+
 .carousselServiceCard h4 {
-    margin-top: 10px;
+    margin-top: 22px;
+    margin-bottom: 20px;
     text-align: center;
-    font-size: 20px; 
+    font-size: 20px;
+    text-shadow: 1px 1px orange;
 }
 
 .carousselServiceCard p {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 75px;
 }
 
 .boutonService {
-    background-color: orange;;
-    width: 60px;
-    height: 40px;
-    margin-left: 150px;  
-    font-size: 20px;    
+    background-color: orange;
+    margin-left: 80px;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.carousselServiceCard img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.33;
+}
+
+/**********************************SECTION TEMOIGNAGES****************************************/
+.cardTemoignage {
+    width: 350px;
+    border: 3px solid black;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.cardTemoignage img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.33;
+}
+
+.descriptionTemoignage {
+    width: 70%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.descriptionTemoignage h4 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.descriptionTemoignage h5 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.descriptionTemoignage h6 {
+    text-align: center;
+    font-size: 14px;
+}
+
+.descriptionTemoignage p {
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/******************************************FOOTER********************************************/
+.foot {
+    padding: 20px;
+    border: 4px solid rgb(6, 114, 37);
+}
+
+.plus p {
+    padding: 20px;
+    font-size: 24px;
 }

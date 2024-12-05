@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js" defer></script>
     <title>Tudodebom</title>
 </head>
@@ -16,42 +18,52 @@
         <nav class=" navHeader">
             <ul class="flex spaceBetween bold ">
                 <li>
-                    <a href="#">Accueil</a>
+                    <a href="#accueil">Accueil</a>
                 </li>
                 <li>
-                    <a href="#">Plats</a>
+                    <a href="#divPlats">Plats</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#divServices">Services</a>
                 </li>
                 <li>
-                    <a href="#">Témoignages</a>
+                    <a href="#divtemoignages">Témoignages</a>
                 </li>
             </ul>
         </nav>
     </header>
 
 
-    <section>
+    <section id="accueil">
         <div class="hero flex">
             <video src="./assets/plat.mp4" muted autoplay loop></video>
-            <div class="heroDescription flex">
-                <h1>"Tudo de Bom - Restaurant Brésilien à Marseille"</h1>
+            <div id="heroContent" class="heroDescription flex">
+                <!--      <h1>"Tudo de Bom - Restaurant Brésilien à Marseille"</h1>
                 <h2>"Voyagez au cœur de la gastronomie brésilienne avec Tudo de Bom, votre restaurant à Marseille"</h2>
-                <a href="#" class="btn">Dégustez nos saveurs uniques</a>
+                <a href="#" class="btn">Dégustez nos saveurs uniques</a>-->
+
             </div>
         </div>
     </section>
 
 
+    <div id="divDivers">
+        <!--  <div class="divers">
+        <p>"Une cuisine brésilienne authentique et savoureuse",
+            "Ambiance chaleureuse pour une expérience culinaire conviviale",
+            "Ingrédients de qualité pour des plats exquis"</p>
+    </div>  -->
+    </div>
+
+
     <section>
         <h3>Plats</h3>
-        <div class="flex spaceBetween container">
-
+        <div id="divPlats" class="flex container gap">
+            <!-- 
             <div class="card width40">
                 <img src="https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/restaurant-bresilien/feijoada.webp"
                     alt="photo d'un plat">
-                    <div class="cardDescription">
+                <div class="cardDescription">
                     <h4>"Feijoada"</h4>
                     <p>"Découvrez notre feijoada, un plat emblématique du Brésil. Un mélange délicieux de haricots
                         noirs, de viande de porc et de saucisses, accompagné de riz et de légumes."</p>
@@ -61,8 +73,8 @@
             <div class="card width40">
                 <img src="https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/restaurant-bresilien/moqueca-de-peixe.webp"
                     alt="photo d'un plat">
-                    <div class="cardDescription">
-                    <h4>"Feijoada"</h4>
+                <div class="cardDescription">
+                    <h4>"Moqueca de Peixe"</h4>
                     <p>"Succombez à la moqueca de peixe, un délicieux ragoût de poisson préparé avec du lait de coco,
                         des tomates, des poivrons et des herbes fraîches. Un festin pour les amateurs de fruits de mer."
                     </p>
@@ -72,7 +84,7 @@
             <div class="card width40">
                 <img src="https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/restaurant-bresilien/coxinha.webp"
                     alt="photo d'un plat">
-                    <div class="cardDescription">
+                <div class="cardDescription">
                     <h4>"Coxinha"</h4>
                     <p>"Craquez pour nos coxinhas, des petites bouchées de poulet assaisonné, enveloppées dans une pâte
                         dorée et croustillante. Parfaites en entrée ou en apéritif."</p>
@@ -82,7 +94,7 @@
             <div class="card width40">
                 <img src="https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/restaurant-bresilien/pao-de-queijo.webp"
                     alt="photo d'un plat">
-                    <div class="cardDescription">
+                <div class="cardDescription">
                     <h4>"Pão de Queijo"</h4>
                     <p>"Goûtez à nos pães de queijo, de délicieux petits pains au fromage brésiliens. Légers et
                         moelleux, ils sont parfaits pour accompagner vos repas ou en snack."</p>
@@ -92,22 +104,22 @@
             <div class="card width40">
                 <img src="https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/restaurant-bresilien/caipirinha.webp"
                     alt="photo d'un plat">
-                    <div class="cardDescription">
+                <div class="cardDescription">
                     <h4>"Caipirinha"</h4>
                     <p>"Rafraîchissez-vous avec notre caipirinha, un cocktail brésilien classique à base de cachaça, de
                         sucre et de citron vert. L'accompagnement parfait pour vos plats."</p>
                 </div>
             </div>
-
+ -->
         </div>
     </section>
 
 
     <section>
         <h3>Services</h3>
-        <div class="flex spaceBetween">
+        <div id="divServices" class="flex spaceBetween">
 
-            <div class="carousselServiceCard">
+            <!--    <div class="carousselServiceCard">
                 <h4>Événements Culturels</h4>
                 <p>"Participez à nos événements culturels pour vivre l'ambiance du Brésil. Musique live, danse, et
                     dégustation de plats authentiques pour une expérience immersive."</p>
@@ -126,18 +138,19 @@
                 <p>"Privatisez un espace pour vos événements spéciaux. Anniversaires, réunions d'affaires ou
                     célébrations, nous créons une atmosphère brésilienne pour rendre votre occasion mémorable."</p>
                 <a href="#" class="boutonService bold">"Reserver ICI"</a>
-            </div>
+            </div>  -->
 
         </div>
+5      
     </section>
 
     <section>
         <h3>Témoignages</h3>
-        <div>
+        <div id="divtemoignages" class="flex spaceBetween">
 
-            <div>
+            <!--  <div class="cardTemoignage">
                 <img src=assets/drapeau.jpg alt="photo d'un drapeau">
-                <div>
+                <div class="descriptionTemoignage">
                     <h4>Type d'expérience : Moqueca de Peixe</h4>
                     <h5>Prénom : Sophie</h5>
                     <h6>note : 5</h6>
@@ -146,9 +159,9 @@
                 </div>
             </div>
 
-            <div>
+            <div class="cardTemoignage">
                 <img src=assets/drapeau.jpg alt="photo d'un drapeau">
-                <div>
+                <div class="descriptionTemoignage">
                     <h4>Type d'expérience : Cours de Cuisine</h4>
                     <h5>Prénom : Lucas</h5>
                     <h6>note : 5</h6>
@@ -158,9 +171,9 @@
                 </div>
             </div>
 
-            <div>
+            <div class="cardTemoignage">
                 <img src=assets/drapeau.jpg alt="photo d'un drapeau">
-                <div>
+                <div class="descriptionTemoignage">
                     <h4>Type d'expérience : Événement Culturel</h4>
                     <h5>Prénom : Camila</h5>
                     <h6>note : 4</h6>
@@ -168,22 +181,29 @@
                         et la nourriture créent une ambiance brésilienne authentique. C'est comme un voyage au Brésil à
                         chaque visite !</p>
                 </div>
-            </div>
+            </div> -->
 
         </div>
-
     </section>
 
     <footer>
-        <div>
-            <p>Du lundi au vendredi
-                <br>
-                8h → 12h | 14h → 18h
-            </p>
-            <p>Samedi
-                <br>
-                8h → 12h
-            </p>
+        <div class="foot flex">
+            <div class="width40 bold">
+                <p>HORAIRES : <br>
+                    Du lundi au vendredi
+                    <br>
+                    8h → 12h | 14h → 18h
+                </p>
+                <p>Samedi
+                    <br>
+                    8h → 12h
+                </p>
+            </div>
+
+            <div class="plus">
+                <p>2024. Restaurant Tudo de Bom</p>
+            </div>
+
         </div>
     </footer>
 
