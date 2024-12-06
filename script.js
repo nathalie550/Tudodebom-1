@@ -8,10 +8,12 @@ fetch("../restaurant-bresilien.json")
         // Lorsque la réponse est reçue, elle est convertie en JSON pour être manipulée en tant qu'objet JavaScript
         return rep.json();
     })
+
     .then((donnee) => {
         // Une fois les données récupérées et converties, elles sont affichées dans la console pour vérification
         console.log(donnee);
-        // Parcourt le tableau de donnee pour récupérer chaque plat 
+        // Parcourt le tableau de donnee pour récupérer chaque plat     
+       
         donnee.plats.forEach((plat) => {
             // Appelle la fonction 'afficherPlat' pour intégrer les cartes de chaque plat dans la page HTML
             afficherPlat(plat);
@@ -25,7 +27,8 @@ fetch("../restaurant-bresilien.json")
         donnee.temoignages.forEach((temoignage) => {
             // Appelle la fonction 'afficher' pour intégrer les  temoignages dans la page HTML
             afficherTemoignage(temoignage);
-        });
+        });     
+              
     });
 
 
@@ -33,17 +36,19 @@ fetch("../restaurant-bresilien.json")
 // Rôle : Insérer dynamiquement les informations du restaurant dans la page HTML
 // Paramètre : "donnee" - un objet contenant les informations du restaurant
 // Retour : Aucun (la fonction manipule directement le DOM)
-function afficher(fichierJson) {
+function  afficherFichierJson(fichierJson) {
     let nom = fichierJson.nomCommercial //nom du restaurant
     let accroche = fichierJson.texteAccroche // le texte accrocheur
-    let textbtn = fichierJson.texteBouton // texte dans le btn "call action"
+    let textbtn = fichierJson.texteBouton // texte dans le btn "call action"  
 
-    document.querySelector("heroContent").innerHTML += `
-                <h1>${nom}</h1>
-                <h2>${texteAccroche}</h2>
-                <a href="#" class="btn">${texteBouton}</a>
+    document.querySelector("#divCommentaires").innerHTML += divCommentaires
     `
+    <h1>${nom}</h1>
+    <h2>${accroche}</h2>
+    <a href="#" class="btn">${textbtn}</a>
+      `
 }
+
 
 //CREATION DANS LA PARTIE HTML
 function afficherPlat(plat) {
@@ -59,6 +64,7 @@ function afficherPlat(plat) {
     // j'injecte chacune des petites carte dans ma page web dans la div qui a l'id divPlats
     document.querySelector("#divPlats").innerHTML += template
 }
+
 
 
 function afficherService(service) {
@@ -89,10 +95,6 @@ function afficherTemoignage(temoignage) {
     // j'injecte chacune des petites carte dans ma page web dans la div qui a l'id divtemoignages
     document.querySelector("#divtemoignages").innerHTML += templatetemoignage
 }
-
-
-
-
 
 
 
