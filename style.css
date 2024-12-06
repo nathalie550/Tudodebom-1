@@ -27,7 +27,7 @@ li {
 }
 
 .gap {
-    gap:32px;
+    gap: 32px;
 }
 
 .spaceBetween {
@@ -43,6 +43,10 @@ li {
     font-weight: 600;
 }
 
+.width30 {
+    width: 30%;
+}
+
 .width40 {
     width: 40%;
 }
@@ -52,6 +56,10 @@ h3 {
     font-family: "Playwrite HR Lijeva", cursive;
     margin-bottom: 20px;
     margin-left: 15px;
+}
+
+.marginLeft {
+    margin-left: 30px;
 }
 
 .container {
@@ -95,7 +103,7 @@ h3 {
 }
 
 
-/************************************SECTION HERO*********************************************/
+/***************************************************SECTION HERO**************************************************/
 .hero {
     border: 5px solid rgb(6, 114, 37);
     margin-bottom: 40px;
@@ -119,10 +127,10 @@ h3 {
 }
 
 .heroDescription h1 {
-    font-size: 40px;
+    font-size: 50px;
     font-family: "Playwrite HR Lijeva", cursive;
     color: white;
-    margin-bottom: 45px;  
+    margin-bottom: 45px;
 }
 
 .heroDescription h2 {
@@ -141,7 +149,7 @@ h3 {
     background-color: rgb(6, 114, 37);
     width: 320px;
     height: 120px;
-    margin-top: 150px;
+    margin-top: 80px;
     margin-left: 270px;
     align-content: center;
     font-size: 30px;
@@ -157,16 +165,43 @@ h3 {
 }
 
 
-/************************************DIV DIVERS*********************************************/
+/******************************************************DIV DIVERS*************************************************/
+.divers {
+    width: 100%;  
+    position: relative;    
+    padding: 10px; 
+    margin-bottom: 40px;
+}
+
+/* Animation de défilement du texte */
+@keyframes defilerTexte {
+    from {
+        transform: translateX(100%); /* Le texte commence en dehors de l'écran à droite */
+    }
+    to {
+        transform: translateX(-100%); /* Le texte finit en dehors de l'écran à gauche */
+    }
+}
+
+
+/* Applique l'animation de défilement aux paragraphes */
 .divers p {
+    display: inline-block; /* Empêche le texte de se diviser sur plusieurs lignes */
+    animation: defilerTexte 30s linear forwards; /* 30 secondes de défilement*/
+    margin-right: 50px; /* Espace entre les éléments de texte */
+    animation-delay: 0s; /* Initialement aucun délai */
     font-size: 30px;
     font-family: "Playwrite HR Lijeva", cursive;
     margin-bottom: 30px;
     margin-left: 15px;
-   }
+}
 
 
-/****************************SECTION PLAT AVEC LES CARDS*************************************/
+/******************************************SECTION PLAT AVEC LES CARDS********************************************/
+#divPlats {
+    margin-left: 180px;
+}
+
 .card {
     border: 4px solid rgb(6, 114, 37);
     width: 250px;
@@ -196,15 +231,12 @@ h3 {
 /***********************************SECTION SERVICE*****************************************/
 .carousselServiceCard {
     width: 320px;
-    height: 300px;  
+    height: 300px;
     border: 3px solid rgb(6, 114, 37);
-    padding-bottom: 20px;
+    margin-bottom: 80px;
     box-shadow: 4px 3px orange;
     padding: 10px;
-  
-
 }
-
 
 .carousselServiceCard h4 {
     margin-top: 22px;
@@ -221,9 +253,9 @@ h3 {
 }
 
 .boutonService {
-    background-color: orange;   
+    background-color: orange;
     margin-left: 80px;
-    font-size: 20px;  
+    font-size: 20px;
     padding: 20px;
     border-radius: 20px;
 }
@@ -235,11 +267,16 @@ h3 {
 }
 
 /**********************************SECTION TEMOIGNAGES****************************************/
+#divtemoignages {
+    margin-top:30px;   
+}
+
 .cardTemoignage {
     width: 350px;
     border: 3px solid black;
     position: relative;
     margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .cardTemoignage img {
@@ -251,7 +288,7 @@ h3 {
 .descriptionTemoignage {
     width: 70%;
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -259,22 +296,25 @@ h3 {
 
 .descriptionTemoignage h4 {
     text-align: center;
-    font-size: 20px;    
+    font-size: 20px;
+    margin-bottom:8px;
 }
 
 .descriptionTemoignage h5 {
     text-align: center;
     font-size: 20px;
+    margin-bottom:8px;
 }
 
 .descriptionTemoignage h6 {
     text-align: center;
     font-size: 14px;
+    margin-bottom:8px;
 }
 
 .descriptionTemoignage p {
     text-align: center;
-    font-size: 14px;  
+    font-size: 14px;
 }
 
 
@@ -284,7 +324,21 @@ h3 {
     border: 4px solid rgb(6, 114, 37);
 }
 
+.Horaire {
+    margin-left: 20px;
+}
+
+.plus {
+    width: 30%;
+}
+
 .plus p {
-        padding: 20px;
-        font-size: 24px;  
-    }
+    padding: 10px;
+    font-size: 20px;
+}
+
+.icone i {
+    font-size: 40px;
+    color: #3b5998; 
+    margin-top: 20px;  
+}
